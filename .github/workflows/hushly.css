@@ -1,0 +1,220 @@
+/* Header */
+
+.hly-abm-page-header .hly-abm-page-header-logo-panel img {
+height: 40px !important;
+min-width: 10px !important;
+}
+
+.hly-abm-page-header .hly-abm-page-header-logo-panel .hly-abm-page-header-prospect-logo {
+padding: 0 !important;
+}
+
+@media (max-width: 500px) {
+.hly-abm-page-header .hly-abm-page-header-logo-panel img {
+width: auto !important;
+min-width: auto !important;
+min-height: auto !important;
+max-width: 40vw !important;
+}
+}
+
+.hly-abm-page-header .hly-abm-page-header-logo-panel .hly-abm-page-header-glyph {
+display: flex;
+align-items: center;
+}
+
+#hly-abm-page-header {
+      box-shadow: 0 .5rem .5rem 0 rgba(0,0,0,.125);
+      position: relative;
+      z-index: 3;
+}
+
+
+/* Banner */
+
+.hly-abm-page-banner .hly-abm-page-banner-content {
+width: min(800px, 90%);
+margin-left: 0 !important;
+}
+
+.hly-abm-page-banner {
+min-height: 400px !important;
+}
+
+.hly-abm-page-banner .hly-abm-page-banner-container {background-position-x: right;}
+
+@media screen and (max-width: 700px) {
+.hly-abm-page-banner .hly-abm-page-banner-container .hly-abm-page-banner {background: linear-gradient(90deg, #00263e77, #00263e55);}
+}
+
+.hly-abm-page-banner .hly-abm-page-banner-cta,
+.hly-abm-page-promotion .hly-promotion-cta-btn {
+transition: color 0.3s ease-in-out,
+                    background-color 0.3s ease-in-out;
+}
+
+.hly-abm-page-banner .hly-abm-page-banner-cta:hover,
+.hly-abm-page-promotion .hly-promotion-cta-btn:hover  {
+background-color: #FF681D55 !important;
+color: #FF681D;
+}
+
+
+
+/* Complimentary */
+
+.hly-abm-page-complimentary-subtitle {
+font-size: 1.25rem;
+}
+
+.hly-abm-page-complimentary-container {
+display: flex;
+align-items: center;
+}
+
+.hly-abm-page-complimentary-container > * {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+
+/* Content */
+
+.hly-abm-page-content {
+--navbar-bg-color:  linear-gradient(0.1turn, #4E4FA9, #A831D6, #E10098, #FE7351);
+--menu-color: #fff;
+--menu-hover-color: #00263d;
+--menu-hover-bg-color: #fff;
+--nav-menu-alignment: left;
+
+--stream-heading-color: #00263d;
+--stream-bg-color: #A831D6;
+
+--asset-tile-bg-color: #A831D6;
+--asset-tile-icon-color: #fff;
+--asset-tile-type-color: #fff;
+
+--asset-alignment: space-between;
+}
+
+.hly-page-content .hly-navbar {
+    background: var(--navbar-bg-color) !important;
+height: auto !important;
+    font-size: 16px;
+   color: white;
+   display: flex;
+   margin-bottom: 1em;
+margin-top: 3em;
+}
+
+.hly-page-content .hly-navbar .hly-navbar-nav {
+justify-content: var(--nav-menu-alignment) !important;
+}
+
+.hly-page-content .hly-navbar .hly-navbar-nav li {
+border-right: 2px solid white;
+text-align: center;
+padding-inline: 1em;
+}
+
+.hly-page-content .hly-navbar .hly-navbar-nav li:last-child {
+border-right: 0;
+}
+
+.hub-nav .hly-page-content-menu a {
+color: var(--menu-color, white) !important;
+cursor: pointer;
+line-height: 1.35em;
+}
+
+.hub-nav .hly-page-content-menu a:hover {
+color: var(--menu-hover-color) !important;
+background-color: var(--menu-hover-bg-color) !important;
+}
+
+.hub-stream .hub-stream-info {
+display: none;
+}
+
+.hub-tile .hub-tile-content-description-container .description-content h3 {
+display: none;
+}
+
+.hly-abm-page-content .hly-page-container {
+width: min(100%, 1080px) !important;
+}
+
+.hub-stream .hub-stream-info h1 {
+    margin: 2em auto 1em !important;
+    text-shadow: none !important;
+    padding-left: 0.5em;
+    color: var(--stream-heading-color) !important;
+background-color: var(--stream-bg-color) !important;
+}
+
+.hub-stream .hly-stream-items-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: var(--asset-alignment);
+gap: 2rem;
+}
+
+.hub-tile {
+  margin: 10px 10px !important;
+}
+
+.hub-tile .hub-tile-item-link {
+  color: var(--asset-tile-type-color, white) !important;
+  font-weight: 700;
+  background: var(--asset-tile-bg-color) !important;
+}
+
+.hub-tile .hub-tile-item-link span i {
+  color: var(--asset-tile-icon-color, white) !important;
+}
+
+.hub-tile .hub-tile-content .hub-tile-content-title {
+font-size: 1.4rem !important;
+max-height: 5em !important;
+overflow: hidden;
+}
+
+.hly-clearfix::after {
+    display: none !important;
+}
+
+
+/* Promotion */
+
+.hly-abm-page-promotion .hly-promotion-cta .hly-promotion-cta-btn {
+background: transparent !important;
+transition: 1s all;
+}
+
+.hly-abm-page-promotion .hly-promotion-cta .hly-promotion-cta-btn:hover  {
+background: black !important;
+border: 3px solid black !important;
+color: white !important;
+}
+
+
+
+/* Footer */
+
+#hly-abm-page-footer {
+background-color: #00263d;
+background-image: url(https://s3.us-west-1.amazonaws.com/statics.hushly.com/37202/6k0loj6q70b7etcmal48gf7qim.svg);
+background-position-y: -292px;
+color: white;
+background-size: 130% 300%;
+background-repeat: no-repeat;
+background-blend-mode: overlay;
+}
+
+.hly-abm-page-footer .hly-abm-page-footer-links {
+display: flex;
+justify-content: center;
+gap: 30px;
+}
